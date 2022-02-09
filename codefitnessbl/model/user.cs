@@ -5,6 +5,7 @@ namespace codefitnessbl.model
     /// <summary>
     /// Пользователь
     /// </summary>
+    [Serializable]
     public class User
     {
         #region Свойства

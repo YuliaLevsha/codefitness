@@ -5,6 +5,7 @@ namespace codefitnessbl.model
     /// <summary>
     /// Пол
     /// </summary>
+    [Serializable]
     public class Gender
     {
         /// <summary>
