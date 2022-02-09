@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\UserController.cs" />
-    <Compile Include="model\gender.cs" />
-    <Compile Include="model\user.cs" />
+    <Compile Include="model\Gender.cs" />
+    <Compile Include="model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
