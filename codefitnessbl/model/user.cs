@@ -5,7 +5,7 @@ namespace codefitnessbl.model
     /// <summary>
     /// Пользователь
     /// </summary>
-    public class user
+    public class User
     {
         #region Свойства
         /// <summary>
@@ -15,7 +15,7 @@ namespace codefitnessbl.model
         /// <summary>
         /// Пол
         /// </summary>
-        public gender gender { get; }
+        public Gender Gender { get; }
         /// <summary>
         /// Дата рождения
         /// </summary>
@@ -37,7 +37,7 @@ namespace codefitnessbl.model
         /// <param name="birthdate">Дата рождения</param>
         /// <param name="weight">Вес</param>
         /// <param name="height">Рост</param>
-        public user(string name, gender gender, DateTime birthdate, double weight, double height)
+        public User(string name, Gender gender, DateTime birthdate, double weight, double height)
         {
             #region Проверка условий
             if (string.IsNullOrWhiteSpace(name))
@@ -62,7 +62,7 @@ namespace codefitnessbl.model
             }
             #endregion
             Name = name;
-            gender = gender;
+            Gender = gender;
             BirthDate = birthdate;
             Weight = weight;
             Height = height;

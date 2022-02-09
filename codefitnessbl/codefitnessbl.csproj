@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\UserController.cs" />
     <Compile Include="model\gender.cs" />
     <Compile Include="model\user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

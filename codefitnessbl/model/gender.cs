@@ -5,7 +5,7 @@ namespace codefitnessbl.model
     /// <summary>
     /// Пол
     /// </summary>
-    public class gender
+    public class Gender
     {
         /// <summary>
         /// Название
@@ -15,7 +15,7 @@ namespace codefitnessbl.model
         /// Создать новый пол
         /// </summary>
         /// <param name="name">Имя пола</param>
-        public gender (string name)
+        public Gender (string name)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
