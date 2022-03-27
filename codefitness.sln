@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codefitnessbl", "codefitnessbl\codefitnessbl.csproj", "{8C8358ED-F0FB-41FD-B8A4-936159A8337A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codefitnesscmd", "codefitnesscmd\codefitnesscmd.csproj", "{9DF69CA7-9C22-45F3-BAFF-8E4B527F68C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codefitnessblTests", "codefitnessblTests\codefitnessblTests.csproj", "{7AD2D52B-D9BF-42C8-A40E-3024F7C6252F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9DF69CA7-9C22-45F3-BAFF-8E4B527F68C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DF69CA7-9C22-45F3-BAFF-8E4B527F68C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DF69CA7-9C22-45F3-BAFF-8E4B527F68C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD2D52B-D9BF-42C8-A40E-3024F7C6252F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD2D52B-D9BF-42C8-A40E-3024F7C6252F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD2D52B-D9BF-42C8-A40E-3024F7C6252F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD2D52B-D9BF-42C8-A40E-3024F7C6252F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
