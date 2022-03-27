@@ -16,11 +16,11 @@ namespace codefitnessbl.model
         /// <summary>
         /// Пол
         /// </summary>
-        public Gender Gender { get; }
+        public Gender Gender { get; set; }
         /// <summary>
         /// Дата рождения
         /// </summary>
-        public DateTime BirthDate { get; }
+        public DateTime BirthDate { get; set; }
         /// <summary>
         /// Вес
         /// </summary>
@@ -29,6 +29,10 @@ namespace codefitnessbl.model
         /// Рост
         /// </summary>
         public double Height { get; set; }
+        //DateTime nowDate = DataTime.Today;
+        //int age = nowDate.Year - birthDate.Year;
+        //if(birthDate > nowDate.AddYears(-age))age--;
+        public int Age { get { return DateTime.Now.Year - BirthDate.Year; } }
         #endregion
         /// <summary>
         /// Создать нового пользователя
@@ -40,7 +44,7 @@ namespace codefitnessbl.model
         /// <param name="height">Рост</param>
         public User(string name, Gender gender, DateTime birthdate, double weight, double height)
         {
-            #region Проверка условий
+        #region Проверка условий
             if (string.IsNullOrWhiteSpace(name))
             {
                 throw new ArgumentNullException("Имя пользователя не может быть пустым.", nameof(name));
@@ -61,7 +65,7 @@ namespace codefitnessbl.model
             {
                 throw new ArgumentNullException("Рост не может быть меньше либо равен нулю.", nameof(height));
             }
-            #endregion
+            #endregion            
             Name = name;
             Gender = gender;
             BirthDate = birthdate;
@@ -69,9 +73,17 @@ namespace codefitnessbl.model
             Height = height;
 
         }
+        public User(string name) 
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentNullException("Имя пользователя не может быть пустым.", nameof(name));
+            }
+            Name = name;
+        }
         public override string ToString()
         {
-            return Name;
+            return Name + " " + Age;
         }
     }
 }
